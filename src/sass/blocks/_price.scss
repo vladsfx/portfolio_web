@@ -12,7 +12,7 @@
 
     &__item {
         display: grid;
-        grid-template: 21px 18px / 180px 120px;
+        grid-template: repeat(2, minmax(21px, auto)) / 180px 120px;
         row-gap: 5px;
         justify-content: space-between;
         padding-left: 27px;
@@ -22,6 +22,7 @@
         position: relative;
         font-size: 14px;
         font-weight: 700;
+
         &:before {
             content: '';
             position: absolute;
@@ -32,13 +33,14 @@
             left: -15%;
             top: 15%;
             z-index: -1;
-        }    
+        }
     }
 
     &__count {
         font-size: 14px;
         font-weight: 700;
-        text-align: right;
+        // text-align: right;
+        justify-self: end;
     }
 
     &__descr {
