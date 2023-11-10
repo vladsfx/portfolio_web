@@ -2,6 +2,7 @@
 
 const open = document.querySelector('.hamburger');
 const close = document.querySelector('.menu__close');
+const close_overlay=document.querySelector('.menu__overlay');
 const menu = document.querySelector('.menu');
 
 open.addEventListener('click', () => {
@@ -9,6 +10,9 @@ open.addEventListener('click', () => {
 });
 
 close.addEventListener('click', () => {
+	menu.classList.remove('active');
+});
+close_overlay.addEventListener('click', () => {
 	menu.classList.remove('active');
 });
 
