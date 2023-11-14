@@ -72,8 +72,8 @@
 				<div class="title title_fz16 promo__subtitle">Меня зовут Александра Смит</div>
 				<h1 class="title title_fz48 promo__title">Я web-разработчик из города Москва</h1>
 				<div class="promo__btns">
-					<a href="#" class="promo__link btn">Портфолио</a>
-					<a href="#" class="promo__link">Про меня</a>
+					<a href="#portfolio" class="promo__link btn">Портфолио</a>
+					<a href="#about" class="promo__link">Про меня</a>
 				</div>
 			</div>
 		</section>
@@ -82,7 +82,11 @@
 			<div class="container">
 				<div class="about__wrapper">
 					<div class="about__photo">
-						<img src="img/main_photo.jpg" alt="photo">
+						<picture>
+							<source media="(max-width: 576px)" srcset="img/main_photo.min.jpg">
+							<source media="(min-width: 577px)" srcset="img/main_photo.jpg">
+							<img src="img/main_photo.jpg" alt="photo">
+						</picture>
 					</div>
 					<div class="about__descr">
 						<h2 class="title title_fz16 about__title">Про меня</h2>
@@ -188,7 +192,6 @@
 							</li>
 						</ul>
 					</div>
-					<!-- <div class="resume__column"></div> -->
 				</div>
 			</div>
 		</section>
@@ -297,6 +300,7 @@
 				</div>
 			</div>
 		</section>
+		
 		<section class="portfolio" id="portfolio">
 			<div class="container">
 				<h2 class="title title_fz16 title__section-title">Портфолио</h2>

@@ -36,30 +36,37 @@
         margin-bottom: 0;
     }
 
-    table{
+    table {
         border: 1px solid #d8d8d8;
         border-collapse: collapse;
         width: 95%;
         margin: 20px 0;
-        td,th{
+
+        td,
+        th {
             border: 1px solid #d8d8d8;
             padding: 10px 0 10px 20px;
             vertical-align: top;
         }
-        th{
+
+        th {
             font-weight: 700;
         }
     }
 
-    .btn{
+    .btn {
+        display: block;
         width: 200px;
         text-align: center;
         margin: 40px auto 0;
         text-transform: uppercase;
         font-weight: 700;
-        a{
+
+        a {
             color: #000;
-            &:hover{
+            padding: 15px 40px;
+
+            &:hover {
                 text-decoration: none;
             }
         }
